@@ -6,25 +6,17 @@ import kittens from "../kittens.json";
 
 
 class KittenFlex extends Component {
-   state = {
-      guessed: false
-   };
-
-   handleGuess = () => {
-      if (!this.state.guessed) {
-         this.setState({ guessed: true })
-      }
-   };
 
    render() {
       return (
-         <div className="kitten-flexbox d-flex flex-wrap">
+         <div className="container kitten-flexbox d-flex flex-wrap">
             {kittens.map(elem => (
                <KittenCard
                   id={elem.id}
                   image={elem.image}
-                  guessed={this.state.guessed}
-                  handleGuess={this.handleGuess}
+                  score={this.props.score}
+                  highScore={this.props.highScore}
+                  incrementScore={this.props.incrementScore}
                />
             ))}
          </div>
