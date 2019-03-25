@@ -23,6 +23,10 @@ class App extends Component {
     }
   };
 
+  resetScore = () => {
+    this.setState({ score: 0 });
+  };
+
   render() {
     return (
       <div>
@@ -32,6 +36,7 @@ class App extends Component {
           score={this.state.score}
           highScore={this.state.highScore}
           incrementScore={this.incrementScore}
+          resetScore={this.resetScore}
         />
       </div>
     );
