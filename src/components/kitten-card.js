@@ -10,11 +10,12 @@ class KittenCard extends Component {
                alt="kitten"
                className="kitten-card"
                id={this.props.id}
-               // any otherway to pass this as a boolean besides using 
+               // why can't i pass this as a string using a non-boolean attribute, then turn it into
+               // a boolean afterwards with the Boolean() method?
                checked={this.props.guessed}
                width="200" height="200"
-               // no way to pass parameters here?
                onClick={this.props.handleGuess}
+            // no way to pass parameters here?
             // onClick={this.props.handleGuess(this.props.id, this.props.guessed)}
             />
          </div>

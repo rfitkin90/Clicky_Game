@@ -36,7 +36,7 @@ class App extends Component {
             this.incrementScore(kittens, id, this.state.highScore, 'Correct guess!');
          }
          // also check win condition(if they guess all correctly)
-         if (this.state.score === kittens.length) {
+         if (this.state.score === kittens.length - 1) {
             this.resetGame(kittens, 'You win! Play again!');
          }
          // if incorrect guess
