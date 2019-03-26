@@ -1,39 +1,34 @@
 import React, { Component } from 'react';
 // import components
 import KittenCard from './kitten-card';
-// import json object
-import kittens from "../kittens.json";
 
 
 class KittenFlex extends Component {
 
-   randomizeOrder = (array) => {
-      var currentIndex = array.length, temporaryValue, randomIndex;
-      // While there remain elements to shuffle...
-      while (0 !== currentIndex) {
-         // Pick a remaining element...
-         randomIndex = Math.floor(Math.random() * currentIndex);
-         currentIndex -= 1;
-         // And swap it with the current element.
-         temporaryValue = array[currentIndex];
-         array[currentIndex] = array[randomIndex];
-         array[randomIndex] = temporaryValue;
+   shuffle = array => {
+      let counter = array.length;
+      // While there are elements in the array
+      while (counter > 0) {
+         // Pick a random index
+         let index = Math.floor(Math.random() * counter);
+         // Decrease counter by 1
+         counter--;
+         // And swap the last element with it
+         let temp = array[counter];
+         array[counter] = array[index];
+         array[index] = temp;
       }
       return array;
    }
 
    appendCards = () => {
-      // const randomizedArr = this.randomizeOrder(kittens);
-      return kittens.map(elem => (
+      return this.shuffle(this.props.kittens).map(elem => (
          <KittenCard
+            key={elem.id}
             id={elem.id}
             image={elem.image}
-            score={this.props.score}
-            highScore={this.props.highScore}
-            incrementScore={this.props.incrementScore}
-            resetGame={this.props.resetGame}
-            newGame={this.props.newGame}
-            continueGame={this.props.continueGame}
+            guessed={elem.guessed}
+            handleGuess={this.props.handleGuess}
          />
       ))
    }

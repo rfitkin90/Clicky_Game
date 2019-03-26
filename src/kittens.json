@@ -1,50 +1,62 @@
 [
    {
+      "id": 0,
+      "image": "/images/kitten0.jpg",
+      "guessed": false
+   },
+   {
       "id": 1,
-      "image": "https://placekitten.com/301/301"
+      "image": "/images/kitten1.jpg",
+      "guessed": false
    },
    {
       "id": 2,
-      "image": "https://placekitten.com/314/314"
+      "image": "/images/kitten2.jpg",
+      "guessed": false
    },
    {
       "id": 3,
-      "image": "https://placekitten.com/303/303"
+      "image": "/images/kitten3.jpg",
+      "guessed": false
    },
    {
       "id": 4,
-      "image": "https://placekitten.com/304/304"
+      "image": "/images/kitten4.jpg",
+      "guessed": false
    },
    {
       "id": 5,
-      "image": "https://placekitten.com/305/305"
+      "image": "/images/kitten5.jpg",
+      "guessed": false
    },
    {
       "id": 6,
-      "image": "https://placekitten.com/306/306"
+      "image": "/images/kitten6.jpg",
+      "guessed": false
    },
    {
       "id": 7,
-      "image": "https://placekitten.com/307/307"
+      "image": "/images/kitten7.jpg",
+      "guessed": false
    },
    {
       "id": 8,
-      "image": "https://placekitten.com/308/308"
+      "image": "/images/kitten8.jpg",
+      "guessed": false
    },
    {
       "id": 9,
-      "image": "https://placekitten.com/316/316"
+      "image": "/images/kitten9.jpg",
+      "guessed": false
    },
    {
       "id": 10,
-      "image": "https://placekitten.com/310/310"
+      "image": "/images/kitten10.jpg",
+      "guessed": false
    },
    {
       "id": 11,
-      "image": "https://placekitten.com/320/320"
-   },
-   {
-      "id": 12,
-      "image": "https://placekitten.com/312/312"
+      "image": "/images/kitten11.jpg",
+      "guessed": false
    }
 ]

@@ -5,8 +5,8 @@ class Jumbotron extends Component {
       return (
          <div className="jumbotron jumbotron-fluid">
             <div className="container">
-               <h1>Bootstrap Tutorial</h1>
-               <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+               <h1>Kitten Memory Game</h1>
+               <p>Click on a kitten to gain a point, but don't click on any more than once!</p>
             </div>
          </div>
       );

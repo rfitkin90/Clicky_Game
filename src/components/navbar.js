@@ -3,24 +3,19 @@ import React, { Component } from 'react';
 class Navbar extends Component {
    render() {
       return (
-         <nav className="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
-            <a className="navbar-brand">Navbar</a>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-               <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="collapsibleNavbar">
-               <ul className="navbar-nav">
-                  <li className="nav-item">
-                     <a className="nav-link">Link</a>
-                  </li>
-                  <li className="nav-item">
-                     <a className="nav-link">Link</a>
-                  </li>
-                  <li className="nav-item">
-                     <a className="nav-link">Link</a>
-                  </li>
-               </ul>
-            </div>
+         <nav className="navbar navbar-expand-sm bg-light sticky-top" id="main-navbar">
+            <ul className="navbar-nav d-flex justify-content-between container">
+               {/* <li className="nav-item">
+                  <span><strong>Clicky Game</strong></span>
+               </li> */}
+               <li className="nav-item">
+                  <span>{this.props.guessMessage}</span>
+               </li>
+               <li className="nav-item">
+                  <span><strong>Score: </strong>{this.props.score} &nbsp;<strong>/</strong>&nbsp; </span>
+                  <span><strong>High Score: </strong>{this.props.highScore}</span>
+               </li>
+            </ul>
          </nav>
       );
    }
