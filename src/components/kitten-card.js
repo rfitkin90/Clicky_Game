@@ -2,18 +2,25 @@ import React, { Component } from 'react';
 
 class KittenCard extends Component {
    state = {
-      guessed: this.props.guessed
+      guessed: false
    };
 
-   handleGuess = async () => {
+   checkNewGame = () => {
+      if (this.props.newGame) {
+         this.setState({ guessed: false });
+         this.props.continueGame();
+      }
+   }
+
+   handleGuess = () => {
       // if user makes a correct guess
       if (!this.state.guessed) {
          this.setState({ guessed: true })
-         await this.props.incrementScore();
+         this.props.incrementScore();
          console.log('score:', this.props.score);
          // if user wins
          if (this.props.score === 12) {
-            this.props.resetScore();
+            this.props.resetGame();
             console.log('score:', this.props.score);
          }
       }

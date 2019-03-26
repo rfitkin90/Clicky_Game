@@ -31,8 +31,9 @@ class KittenFlex extends Component {
             score={this.props.score}
             highScore={this.props.highScore}
             incrementScore={this.props.incrementScore}
-            resetScore={this.props.resetScore}
-            guessed={this.guessed}
+            resetGame={this.props.resetGame}
+            newGame={this.props.newGame}
+            continueGame={this.props.continueGame}
          />
       ))
    }
