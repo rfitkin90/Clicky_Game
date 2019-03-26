@@ -1,62 +1,62 @@
 [
    {
       "id": 0,
-      "image": "/public/images/kitten0.jpg",
+      "image": "https://i.imgur.com/2uF6erS.jpg",
       "guessed": false
    },
    {
       "id": 1,
-      "image": "/images/kitten1.jpg",
+      "image": "https://i.imgur.com/3gyVk9D.jpg",
       "guessed": false
    },
    {
       "id": 2,
-      "image": "/images/kitten2.jpg",
+      "image": "https://i.imgur.com/8oo1LE7.jpg",
       "guessed": false
    },
    {
       "id": 3,
-      "image": "/images/kitten3.jpg",
+      "image": "https://i.imgur.com/mMzIYGb.jpg",
       "guessed": false
    },
    {
       "id": 4,
-      "image": "/images/kitten4.jpg",
+      "image": "https://i.imgur.com/qp4kTkc.jpg",
       "guessed": false
    },
    {
       "id": 5,
-      "image": "/images/kitten5.jpg",
+      "image": "https://i.imgur.com/syBofYc.jpg",
       "guessed": false
    },
    {
       "id": 6,
-      "image": "/images/kitten6.jpg",
+      "image": "https://i.imgur.com/Iq49VJ9.jpg",
       "guessed": false
    },
    {
       "id": 7,
-      "image": "/images/kitten7.jpg",
+      "image": "https://i.imgur.com/0WoRiP2.jpg",
       "guessed": false
    },
    {
       "id": 8,
-      "image": "/images/kitten8.jpg",
+      "image": "https://i.imgur.com/dYf969A.jpg",
       "guessed": false
    },
    {
       "id": 9,
-      "image": "/images/kitten9.jpg",
+      "image": "https://i.imgur.com/Gm976en.jpg",
       "guessed": false
    },
    {
       "id": 10,
-      "image": "/images/kitten10.jpg",
+      "image": "https://i.imgur.com/ItQb9jP.jpg",
       "guessed": false
    },
    {
       "id": 11,
-      "image": "/images/kitten11.jpg",
+      "image": "https://i.imgur.com/qO5e2ch.jpg",
       "guessed": false
    }
 ]
