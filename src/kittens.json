@@ -1,7 +1,7 @@
 [
    {
       "id": 0,
-      "image": "/images/kitten0.jpg",
+      "image": "/public/images/kitten0.jpg",
       "guessed": false
    },
    {
