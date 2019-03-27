@@ -21,22 +21,19 @@ class KittenFlex extends Component {
       return array;
    }
 
-   appendCards = () => {
-      return this.shuffle(this.props.kittens).map(elem => (
-         <KittenCard
-            key={elem.id}
-            id={elem.id}
-            image={elem.image}
-            guessed={elem.guessed}
-            handleGuess={this.props.handleGuess}
-         />
-      ))
-   }
 
    render() {
       return (
          <div className="container kitten-flexbox d-flex flex-wrap">
-            {this.appendCards()}
+            {this.shuffle(this.props.kittens).map(elem => (
+               <KittenCard
+                  key={elem.id}
+                  id={elem.id}
+                  image={elem.image}
+                  guessed={elem.guessed}
+                  handleGuess={this.props.handleGuess}
+               />
+            ))}
          </div>
       );
    }

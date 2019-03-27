@@ -20,20 +20,25 @@ class App extends Component {
 
    handleGuess = event => {
       event.preventDefault();
-      console.log('id:', event.target.id);
-      console.log('guessed:', event.target.checked);
-      // get index of kitten clicked
+      // get id of kitten clicked
       const id = Number(event.target.id);
       // create new kitten object to change properties individually
       const kittens = Object.assign(this.state.kittens);
+      // find kitten index of the event.target id to also find its guessed state
+      const i = kittens.findIndex(elem => elem.id === id);
+
+      console.log('\n|========================= Clicked Kitten Info =========================|\n\n')
+      console.log('id:', id);
+      console.log('already guessed?:', kittens[i].guessed);
+
       // if correct guess
-      if (!event.target.checked) {
+      if (!kittens[i].guessed) {
          if (this.state.highScore === this.state.score) {
             // new high score reached
-            this.incrementScore(kittens, id, this.state.highScore + 1, 'Correct guess!');
+            this.incrementScore(kittens, i, this.state.highScore + 1, 'Correct guess!');
          } else {
             // no new high score reached
-            this.incrementScore(kittens, id, this.state.highScore, 'Correct guess!');
+            this.incrementScore(kittens, i, this.state.highScore, 'Correct guess!');
          }
          // also check win condition(if they guess all correctly)
          if (this.state.score === kittens.length - 1) {
@@ -46,9 +51,7 @@ class App extends Component {
    }
 
 
-   incrementScore = (kittens, id, newHighScore, guessMessage) => {
-      // find index of clicked kitten's id(since shuffling the array gave it a new index)
-      const i = kittens.findIndex(elem => elem.id === id);
+   incrementScore = (kittens, i, newHighScore, guessMessage) => {
       // set clicked kitten's guessed state to true
       kittens[i].guessed = true;
       // update score/kittens states
@@ -78,8 +81,7 @@ class App extends Component {
    render() {
       return (
          <div id="main-container">
-            {console.log(window.location.origin)}
-            {console.log('\n|============================== State Change ==============================|\n\n')}
+            {console.log('\n|============================== New State ==============================|\n\n')}
             {console.log('score:', this.state.score)}
             {console.log('highScore:', this.state.highScore)}
             {console.log('kittens:\n', this.state.kittens)}
