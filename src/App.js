@@ -92,8 +92,6 @@ class App extends Component {
             />
             <Jumbotron />
             <KittenFlex
-               score={this.state.score}
-               highScore={this.state.highScore}
                kittens={this.state.kittens}
                handleGuess={this.handleGuess}
             />
