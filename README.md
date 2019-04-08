@@ -1,5 +1,7 @@
 # Clicky_Game
 
+A simple memory game made with React.
+
 ![ReadmeImage](./public/images/readme.png)
 
 1. Click on each kitten exactly once to win.
